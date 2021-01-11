@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Neon Text</title>
+</head>
+<body>
+
+    <h1  id="btn">CLOSED</h1>
+    <script >
+        var btn = document.getElementById('btn');
+        btn.onclick = ()=>{
+            if(btn.classList.contains('neon')){
+                btn.classList.remove('neon');
+                btn.innerText="CLOSED"
+            }else{
+            btn.classList.add("neon");
+                btn.innerText = "OPEN"
+
+            }
+        }
+    </script>
+</body>
+</html>
